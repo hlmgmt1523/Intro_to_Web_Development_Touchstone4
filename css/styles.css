@@ -130,6 +130,25 @@ button {
 button:hover {
     background-color: #2B211C;
 }
+.fav-button {
+    padding: 0 0.4rem;
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #7A4A2A;
+    background-color: transparent;
+}
+.fav-button:hover {
+    color: #E3B65C;
+    background-color: transparent;
+}
+.error {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #B00020;
+}
 footer {
     padding: 1rem;
     text-align: center;

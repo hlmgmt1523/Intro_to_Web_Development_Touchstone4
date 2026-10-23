@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Products</title>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,12 +29,7 @@
                 Ask us about sampling bread with your choice of melted butter, garlic butter, 
                 or add cinnamon for a different twist.
             </p>
-            <ul>
-                <li>Sourdough - Full: $8 | Half: $4</li>
-                <li>Whole Grain - Full: $12 | Half: $6</li>
-                <li>Rye - Full: $10 | Half: $5</li>
-                <li>Baguette - Full: $12 | Half: $7</li>
-            </ul>
+            <ul id="breads-list"></ul>
         </section>
         <section>
             <h2>Pastries</h2>
@@ -41,12 +37,7 @@
                 cinnamon rolls. Seasonal offerings are dependent upon availability. 
                 Stop in during your morning commute to pick up a fresh start to your day.
             </p>
-            <ul>
-                <li>Butter Croissant - $4</li>
-                <li>Cinnamon Roll - $5</li>
-                <li>Seasonal Fruit Danish - $4-$6 *Depending on fruit availability</li>
-                <li>Eclair - $4</li>
-            </ul>
+            <ul id="pastries-list"></ul>
         </section>
         <section>
             <h2>Cakes</h2>
@@ -54,10 +45,13 @@
                 for birthdays, weddings, and community events. Custom orders can be placed
                 through our pre-order form with at least one week's notice.
             </p>
-            <ul>
-                <li>Classic 4 Layer Cake (8-inch Diameter) - $35-$45</li>
-                <li>Cupcakes (Dozen) - $26-$31</li>
-                <li>Custom Celebration Cake - $65-$120</li>
+            <ul id="cakes-list"></ul>
+        </section>
+        <section>
+            <h2>My Favorites</h2>
+            <p id="favorites-empty">You haven't saved any favorites, yet. Tap the heart on any item to add it.
+            </p>
+            <ul id="favorites-list">
             </ul>
         </section>
     </main>

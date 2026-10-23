@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Contact Us</title>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,14 +26,16 @@
             <p>Place a pre-order or send us a question. We'll get back to you within a
                 business day.
             </p>
-            <form action="#" method="post">
+            <form id="order-form" action="#" method="post" novalidate>
                 <fieldset>
                     <legend>Your Information</legend>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
+                    <span id="name-error" class="error"></span>
                     <br>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
+                    <span id="email-error" class="error"></span>
                     <br>
                 </fieldset>
                 <fieldset>
@@ -51,6 +54,7 @@
                     <label for="item-details">Item Details or Question:</label>
                     <br>
                     <textarea id="item-details" name="item-details" rows="4" cols="40" maxlength="500" required></textarea>
+                    <span id="item-details-error" class="error"></span>
                     <br>
                     <label for="allergy-notes">Allergy Notes (if applicable):</label>
                     <br>
@@ -58,6 +62,7 @@
                     <br>
                 </fieldset>
                 <button type="submit">Send Request</button>
+                <p id="form-success"></p>
             </form>
         </section>
         <section>
